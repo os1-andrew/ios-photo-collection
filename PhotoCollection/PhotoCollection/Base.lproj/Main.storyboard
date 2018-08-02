@@ -12,7 +12,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Photo Collection View Controller-->
+        <!--Photo Collection-->
         <scene sceneID="TQ7-gl-7tx">
             <objects>
                 <collectionViewController id="waX-5m-acP" customClass="PhotoCollectionViewController" customModule="PhotoCollection" customModuleProvider="target" sceneMemberID="viewController">
@@ -37,10 +37,10 @@
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="HeS-pY-c1A">
                                             <rect key="frame" x="0.0" y="0.0" width="140" height="160"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="y97-yN-W0T">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="y97-yN-W0T">
                                                     <rect key="frame" x="0.0" y="0.0" width="140" height="128"/>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lEo-gN-zGj">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lEo-gN-zGj">
                                                     <rect key="frame" x="49.333333333333343" y="136" width="41.666666666666657" height="24"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -69,7 +69,7 @@
                             <outlet property="delegate" destination="waX-5m-acP" id="jar-qN-8Rj"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" id="ubI-Cu-MJq">
+                    <navigationItem key="navigationItem" title="Photo Collection" id="ubI-Cu-MJq">
                         <barButtonItem key="leftBarButtonItem" title="Select Theme" id="fE0-2U-qsR">
                             <connections>
                                 <segue destination="YEv-KK-ZYe" kind="presentation" identifier="SelectTheme" id="NdS-BY-uBl"/>
@@ -157,14 +157,14 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="249" translatesAutoresizingMaskIntoConstraints="NO" id="eYx-XD-uZ1">
                                         <rect key="frame" x="0.0" y="0.0" width="382" height="344"/>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qgA-wA-2tV">
+                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qgA-wA-2tV">
                                         <rect key="frame" x="0.0" y="352" width="382" height="30"/>
                                         <state key="normal" title="Add Photo"/>
                                         <connections>
                                             <action selector="addPhoto:" destination="7C1-bC-Eg5" eventType="touchUpInside" id="51B-wu-RZr"/>
                                         </connections>
                                     </button>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="253" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title of Photo" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hPD-O6-xcd">
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="253" verticalCompressionResistancePriority="752" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title of Photo" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hPD-O6-xcd">
                                         <rect key="frame" x="0.0" y="390" width="382" height="30"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -186,7 +186,11 @@
                         <viewLayoutGuide key="safeArea" id="zAp-vM-8Sq"/>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="eXQ-Vl-aBc">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Guj-bY-Atv"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Guj-bY-Atv">
+                            <connections>
+                                <action selector="save:" destination="7C1-bC-Eg5" id="UI0-4P-6BB"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="imageTitleField" destination="hPD-O6-xcd" id="WPX-BW-tdD"/>
@@ -217,6 +221,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="axT-Zj-CAy"/>
+        <segue reference="4Dr-WP-UdI"/>
     </inferredMetricsTieBreakers>
 </document>
