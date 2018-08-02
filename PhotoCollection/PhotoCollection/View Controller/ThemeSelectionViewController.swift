@@ -22,9 +22,13 @@ class ThemeSelectionViewController: UIViewController {
     }
     
     @IBAction func selectDark(_ sender: Any) {
+        themeHelper?.setThemePreferenceToDark()
+        dismiss(animated: true, completion: nil)
     }
     
     @IBAction func selectLight(_ sender: Any) {
+        themeHelper?.setThemePreferenceToLight()
+        dismiss(animated: true, completion: nil)
     }
     
     /*
@@ -37,4 +41,6 @@ class ThemeSelectionViewController: UIViewController {
     }
     */
 
+    //MARK: - Properties
+    var themeHelper: ThemeHelper?
 }

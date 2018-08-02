@@ -14,7 +14,7 @@
 		10BA00D721139105005F3618 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BA00D621139105005F3618 /* Photo.swift */; };
 		10BA00DB2113917D005F3618 /* PhotoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BA00DA2113917D005F3618 /* PhotoController.swift */; };
 		10BA00DD21139390005F3618 /* ThemeHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BA00DC21139390005F3618 /* ThemeHelper.swift */; };
-		10BA00DF211398C9005F3618 /* PhotosCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BA00DE211398C9005F3618 /* PhotosCollectionViewController.swift */; };
+		10BA00DF211398C9005F3618 /* PhotoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BA00DE211398C9005F3618 /* PhotoCollectionViewController.swift */; };
 		10BA00E121139A42005F3618 /* PhotosCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BA00E021139A42005F3618 /* PhotosCollectionViewCell.swift */; };
 		10BA00E321139B9D005F3618 /* PhotoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BA00E221139B9D005F3618 /* PhotoDetailViewController.swift */; };
 		10BA00E521139F39005F3618 /* ThemeSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BA00E421139F39005F3618 /* ThemeSelectionViewController.swift */; };
@@ -30,7 +30,7 @@
 		10BA00D621139105005F3618 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		10BA00DA2113917D005F3618 /* PhotoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoController.swift; sourceTree = "<group>"; };
 		10BA00DC21139390005F3618 /* ThemeHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeHelper.swift; sourceTree = "<group>"; };
-		10BA00DE211398C9005F3618 /* PhotosCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCollectionViewController.swift; sourceTree = "<group>"; };
+		10BA00DE211398C9005F3618 /* PhotoCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewController.swift; sourceTree = "<group>"; };
 		10BA00E021139A42005F3618 /* PhotosCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCollectionViewCell.swift; sourceTree = "<group>"; };
 		10BA00E221139B9D005F3618 /* PhotoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailViewController.swift; sourceTree = "<group>"; };
 		10BA00E421139F39005F3618 /* ThemeSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeSelectionViewController.swift; sourceTree = "<group>"; };
@@ -90,7 +90,7 @@
 		10BA00D521139081005F3618 /* View Controller */ = {
 			isa = PBXGroup;
 			children = (
-				10BA00DE211398C9005F3618 /* PhotosCollectionViewController.swift */,
+				10BA00DE211398C9005F3618 /* PhotoCollectionViewController.swift */,
 				10BA00E221139B9D005F3618 /* PhotoDetailViewController.swift */,
 				10BA00E421139F39005F3618 /* ThemeSelectionViewController.swift */,
 			);
@@ -180,7 +180,7 @@
 				10BA00D721139105005F3618 /* Photo.swift in Sources */,
 				10BA00E521139F39005F3618 /* ThemeSelectionViewController.swift in Sources */,
 				10BA00DB2113917D005F3618 /* PhotoController.swift in Sources */,
-				10BA00DF211398C9005F3618 /* PhotosCollectionViewController.swift in Sources */,
+				10BA00DF211398C9005F3618 /* PhotoCollectionViewController.swift in Sources */,
 				10BA00E321139B9D005F3618 /* PhotoDetailViewController.swift in Sources */,
 				10BA00DD21139390005F3618 /* ThemeHelper.swift in Sources */,
 				10BA00C321138FA3005F3618 /* AppDelegate.swift in Sources */,
