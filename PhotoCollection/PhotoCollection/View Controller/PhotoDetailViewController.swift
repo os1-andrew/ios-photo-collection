@@ -74,7 +74,7 @@ class PhotoDetailViewController: UIViewController, UIImagePickerControllerDelega
             self.view.backgroundColor = UIColor.lightGray
         } else {
             themeHelper.setThemePreferenceToLight()
-            self.view.backgroundColor = UIColor.init(red: 207, green: 232, blue: 201, alpha: 80.0)
+            self.view.backgroundColor = #colorLiteral(red: 0.9568627477, green: 0.6588235497, blue: 0.5450980663, alpha: 1)
         }
         
     }
@@ -92,6 +92,7 @@ class PhotoDetailViewController: UIViewController, UIImagePickerControllerDelega
         } else {
             self.title = "Add Photo"
         }
+        setTheme()
     }
     
     

@@ -14,19 +14,20 @@ class PhotoCollectionViewController: UICollectionViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+    
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Register cell classes
         self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
-
+        setTheme()
         // Do any additional setup after loading the view.
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         collectionView?.reloadData()
+        setTheme()
     }
 
 
@@ -49,10 +50,10 @@ class PhotoCollectionViewController: UICollectionViewController {
         
         if preference == "Dark"{
             themeHelper.setThemePreferenceToDark()
-            self.view.backgroundColor = UIColor.lightGray
+            collectionView?.backgroundColor = UIColor.lightGray
         } else {
             themeHelper.setThemePreferenceToLight()
-            self.view.backgroundColor = UIColor.init(red: 207, green: 232, blue: 201, alpha: 80.0)
+            collectionView?.backgroundColor = #colorLiteral(red: 0.9568627477, green: 0.6588235497, blue: 0.5450980663, alpha: 1)
         }
         
     }
