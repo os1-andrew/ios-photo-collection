@@ -25,6 +25,8 @@ class PhotoDetailViewController: UIViewController, UIImagePickerControllerDelega
             let title = imageTitleField.text,
             let imageData = UIImagePNGRepresentation(image) else {return}
         
+        if title.isEmpty {return}
+        
         if let photo = photo {
             photoController?.update(photo: photo, imageData: imageData, imageTitle: title)
         } else {
